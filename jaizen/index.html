@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>Wearable UI</title>
+	<link rel="stylesheet"  href="lib/tau/wearable/theme/default/tau.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet"  href="css/style.css">
+
+</head>
+<body>
+	
+	<div class="ui-page ui-page-active" id="main">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">자이젠타이젠</a>
+
+        </header>
+        <section class="ui-content">
+        	
+            <a href="#" id="setting-btn" class="trainingbtn"></a>
+            <a href="#" id="training-btn" class="trainingbtn"></a>
+            <a href="#" id="profile2" class="settingbtn"></a>
+            <a href="#" id="battle" class="exitbtn"></a>
+            <div class="profiletext">트레이닝</div>
+            <div class=analysistext>분석</div>
+            <div class="settingtext">세팅</div>
+            <div class="exit">종료</div>
+        </section>      
+    </div>
+    
+    <div class="ui-page" id="category">
+        <header class="ui-header ui-has-more">
+            <div href="index.html" class="head">부위</div>
+
+        </header>
+        <section class="ui-content">
+        	<ul class="ui-listview listview scrollable">
+        		<div class="category"><div class="arm" id="arm"></div><div>팔</div></div>
+	        	<div class="category"><div class="back2" id="backed"></div>등</div>
+	        	<div class="category"><div class="chest" id="chest"></div>가슴</div>
+	        	<div class="category"><div class="sholder" id="sholder"></div>어깨</div>
+	        	<div class="category"><div class="leg" id="leg"></div>다리</div>
+	        	<div class="category"><div class="adominal" id="adominal"></div>복부</div>
+        	</ul>
+            <div class="category back" id="backat">이전</div>
+
+        </section>      
+    </div>
+    
+    <div class="ui-page" id="armTraining">
+        <header class="ui-header ui-has-more">
+            <div href="index.html" class="head">arm</div>
+		
+        </header>
+        <section class="ui-content">
+        	<ul class="ui-listview listview scrollable">
+	        	<div class="category" id="dumbbell"><div class="dumbbell"></div>아령</div>
+	        	<div class="category" id="deadlift"><div class="deadlift"></div>데드리프트</div>
+	        	<div class="category" id="benchpress"><div class="benchpress"></div>벤치프레스</div>
+	        	<div class="category" id="chin"><div class="chin"></div>턱걸이</div>
+	        	<div class="category" id="kettlebell"><div class="kettlebell"></div>케틀벨</div>
+	        	<div class="category" id="sholderpress"><div class="sholderpress"></div>숄더프레스</div>
+
+        	</ul>
+            <div class="category back" id="backat">이전</div>
+
+        </section>      
+    </div>
+    
+    <div class="ui-page" id="set">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">set</a>
+        </header>
+        <section class="ui-content">
+        	<form action="#trainingStart" method="post" name="ssss">
+        		<div class="category">
+        			<section class="setfont">Set</section>
+        				<div class="setimage" id='setvalue'><span class='setimagefont'></span></div>        				
+        		</div>        		
+        		<div class="category">
+        			<section class="setfont">Time</section>
+        			<div class="countimage" id='countvalue'><span class='countimagefont'></span></div>	
+        		</div>
+        	</form>
+        <footer class="ui-footer ui-grid-col-2">
+           	<div class="ok ui-btn"  id="start">시작</div>
+            <div class="cancel ui-btn" id="back2" >이전</div>
+        </footer>
+       </section>      
+   </div>
+    
+    <div class="ui-page" id="profile">
+        <header class="ui-header ui-has-more">
+            <div href="index.html" class="head">profile</div>
+		 
+        </header>
+        <section class="ui-content">
+        	<div class="profileImage" id='profileimage'>
+        		<span class="profileImagePrint"></span>
+        	</div>
+        	<div class="stat">
+        		<span class ="power">근력</span>
+        		<span class="statvalue"></span>
+        		<span class ="plus" id= 'plusPower'></span>
+        		<span class ="dex">순발력 </span>
+        		<span class="statvalue2"></span>
+        		<span class ="plus2" id= 'plusDex'></span>
+        		<span class ="endurance">지구력 </span>
+        		<span class="statvalue3"></span>
+        		<span class = "plus3" id= 'plusEndurance'></span>
+        	</div>
+        	<div class="exppoint">경험치<br> 
+        		<span class="exppoint2"></span>
+        		<span class="exppoint4">/</span>
+        		<span class="exppoint3"></span>
+        	</div>
+        	<div class="statpoint">스텟포인트 <br>
+        		<span class="statpoint2"></span>	
+        	</div>
+        </section> 
+        <footer class="ui-footer ui-grid-col-2">
+            <div class="ok ui-btn"  id='backpro'>이전</div>
+            <div class="cancel ui-btn"  id='log'>내역보기</div>
+        </footer>     
+    </div>
+    
+    <div class="ui-page" id="profileImageSetting">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">profileImage</a>
+        </header>
+        <section class="ui-content">       	
+        	<ul class="ui-listview listview scrollable">       		
+        		<div class="category"><div class='profileImage1' id='image1'></div></div>
+        		<div class="category"><div class='profileImage2' id='image2'></div></div>
+        		<div class="category"><div class='profileImage3' id='image3'></div></div>
+        		<div class="category"><div class='profileImage4' id='image4'></div></div>
+        		<div class="category"><div class='profileImage5' id='image5'></div></div>
+        		<div class="category"></div>    		
+        	</ul>
+        	<div class="ui-btn" id="backpi">이전</div>
+	  </section>      
+    </div>
+    
+    <div class="ui-page" id="setting">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">setting</a>
+
+        </header>
+        <section class="ui-content">
+        <ul class="ui-listview listview scrollable">
+        	<div id='age' class="setting">
+	        	<span calss="settings-value">age</span>
+	        	<span class="setAge settings-value"></span>
+	        	
+        	</div>
+        	<div id='weight' class='setting'>
+        		<span>weight</span>
+	        	<span class="setWeight settings-value"></span>
+	        	
+        	</div>
+        	<div id='height' class='setting'>
+	        	<span>height </span>
+	        	<span class="setHeight settings-value"></span>
+	        	
+        	</div>
+        	<div id='gender' class='setting'>
+	        	<span>gender </span>
+	        	<span class="setGender settings-value"></span>
+	        	
+        	</div>
+        	</ul>
+        <footer class="ui-footer ui-grid-col-1">
+            <div class="ui-btn" id="backset">이전</div>
+        </footer>   
+        </section>      
+    </div>
+    
+    <div class="ui-page" id="genderSetting">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">gendersetting</a>
+
+        </header>
+        <section class="ui-content">
+        <div class="listbox">
+        	<form name="genderinput">
+	            <ul class="ui-listview listview scrollable">
+	                <li>
+	                <input type="radio" name="gender" id="genderM" value="M" class="custom"/>
+	                <label for="genderM" class="labelradio">Male</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="gender" id="genderF" value="F" class="custom"/>
+	                <label for="genderF" class="labelradio">Female</label>
+	                </li>
+	                
+	            </ul>
+            </form>
+        </div>
+        </section>
+        <footer class="ui-footer ui-grid-col-1">
+            <div class="ok ui-btn"  id='okgen'>확인</div>
+            
+        </footer>     
+    </div>
+    
+    <div class="ui-page" id="ageSetting">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">agesetting</a>
+
+        </header>
+        <section class="ui-content">
+        <div class="listbox">
+        	<form name="ageinput">
+	            <ul class="ui-listview listview scrollable">
+	                <li>
+	                <input type="radio" name="age" id="age10" value="10" class="custom"/>
+	                <label for="age10" class="labelradio">10+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="age" id="age20" value="20" class="custom"/>
+	                <label for="age20" class="labelradio">20+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="age" id="age30" value="30" class="custom"/>
+	                <label for="age30" class="labelradio">30+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="age" id="age40" value="40" class="custom"/>
+	                <label for="age40" class="labelradio">40+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="age" id="age50" value="50" class="custom"/>
+	                <label for="age50" class="labelradio">50+</label>
+	                </li>
+	                
+	            </ul>
+            </form>
+        </div>
+        </section>
+        <footer class="ui-footer ui-grid-col-1">
+            <div class="ok ui-btn"  id='okage'>확인</div>
+            
+        </footer>     
+    </div>
+    
+    <div class="ui-page" id="weightSetting">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">weightsetting</a>
+
+        </header>
+        <section class="ui-content">
+        <div class="listbox">
+        	<form name="weightinput">
+	            <ul class="ui-listview listview scrollable">
+	                <li>
+	                <input type="radio" name="weight" id="weight40" value="40" class="custom"/>
+	                <label for="weight40" class="labelradio">40+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="weight" id="weight50" value="50" class="custom"/>
+	                <label for="weight50" class="labelradio">50+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="weight" id="weight60" value="60" class="custom"/>
+	                <label for="weight60" class="labelradio">60+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="weight" id="weight70" value="70" class="custom"/>
+	                <label for="weight70" class="labelradio">70+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="weight" id="weight80" value="80" class="custom"/>
+	                <label for="weight80" class="labelradio">80+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="weight" id="weight90" value="90" class="custom"/>
+	                <label for="weight90" class="labelradio">90+</label>
+	                </li>
+	                
+	            </ul>
+            </form>
+        </div>
+        </section>
+        <footer class="ui-footer ui-grid-col-1">
+            <div class="ok ui-btn"  id='okweight'>확인</div>
+            
+        </footer>          
+    </div>
+    
+    <div class="ui-page" id="heightSetting">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">heightsetting</a>
+
+        </header>
+        <section class="ui-content">
+        <div class="listbox">
+        	<form name="heightinput">
+	            <ul class="ui-listview listview scrollable">
+	                <li>
+	                <input type="radio" name="weight" id="height150" value="150" class="custom"/>
+	                <label for="height150" class="labelradio">150+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="weight" id="height160" value="160" class="custom"/>
+	                <label for="height160" class="labelradio">160+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="weight" id="height170" value="170" class="custom"/>
+	                <label for="height170" class="labelradio">170+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="weight" id="height180" value="180" class="custom"/>
+	                <label for="height180" class="labelradio">180+</label>
+	                </li>
+	                <li>
+	                <input type="radio" name="weight" id="height190" value="190" class="custom"/>
+	                <label for="height190" class="labelradio">190+</label>
+	                </li>
+	                
+	            </ul>
+            </form>
+        </div>
+        </section>
+        <footer class="ui-footer ui-grid-col-1">
+            <div class="ok ui-btn"  id='okheight'>확인</div>
+            
+        </footer>     
+    </div>
+    
+    <div class="ui-page" id="trainingStart">
+        <header class="ui-header ui-has-more">
+            <div class="head">training</div>
+
+        </header>
+        <section class="ui-content">
+        	
+        	<div class="window set">
+        		<div class ="title">Set</div>
+        		<div class = "value">
+        			<span class="set_count"></span>
+        			<span class="middle">/</span>
+        			<span class="max_set"></span>
+        		</div>	
+        	</div>
+        	
+        	<div class="window count">
+        		<div class ="title">Count</div>
+        		<div class = "value">
+        			<span class="count">0</span>
+        			<span class="middle">/</span>
+        			<span class="max_count"></span>
+        		</div>	
+        	
+        	</div>
+        	<div class="window time">
+        		<div class="title">Time</div>
+                <div class="value">
+                    
+                    <span class="minutes">00</span>
+                    <span class="sep-right">:</span>
+                    <span class="seconds">00</span>
+                </div>
+        	
+        	</div>
+        	<div class="window HRM">
+        		<div class="title">HRM</div>
+               
+                <div class="HRMimage">
+                	<span class='HRMvalue'>00</span>
+                </div>
+
+        	</div>
+        	
+			        
+        <footer class="ui-footer ui-grid-col-1">
+            <a class="ok ui-btn" id="ok">Count++</a>
+            <a class="cancel ui-btn" id="backT" href="#">이전</a>
+        </footer>
+        </section>      
+    </div>
+       
+     <div class="ui-page" id="trophy">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">trophy</a>
+
+        </header>
+        <section class="ui-content">
+        	아령 30/50<br>
+        	팔(근력+1 지구력+1 순반력 +1)<br>
+        	팔굽혀펴기 10/50<br>
+        	가슴(근력+1 지구력+1 순반력 +1)
+        <footer class="ui-footer ui-grid-col-2">
+            <a class="cancel ui-btn" id="settingsCancel" href="#main">이전</a>
+        </footer>
+        </section>      
+    </div>
+    
+    <div class="ui-page" id="battle">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">battle</a>
+
+        </header>
+        <section class="ui-content">
+	        	<div class="battlewindow">
+		        	<div class="profilemini"></div>
+		        	<div class="battleId">ID : 조한영(본인)</div>
+		        	<div class="win">1승</div>
+		        	<div class="defeat">0패</div>
+		        	<div class="rank">234등</div>
+	        	</div>
+	        <ul class="ui-listview listview scrollable">	
+	        	<div class="battlewindow" id="user">
+		        	<div class="profilemini"></div>
+		        	<div class="battleId">ID : 홍정민</div>
+		        	<div class="win">2승</div>
+		        	<div class="defeat">1패</div>
+		        	<div class="rank">126등</div>
+	        	</div>
+
+        	</ul>
+        <footer class="ui-footer ui-grid-col-1">
+            <div class="ui-btn" id="backbattle">이전</div>
+        </footer>   
+        </section>      
+    </div>
+    
+    <div class="ui-page" id="battleresult">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">battle</a>
+
+        </header>
+        <section class="ui-content">
+        	
+	        <div class="bat">
+	        	<span class="battlevideo"></span>
+	        </div>        		
+        	
+        <footer class="ui-footer ui-grid-col-1">
+            <div class="ui-btn" id="backbattleresult">확인</div>
+        </footer>   
+        </section>      
+    </div>
+    
+     <div class="ui-page" id="battle2">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">battle</a>
+
+        </header>
+        <section class="ui-content">
+	        	<div class="battlewindow">
+		        	<div class="profilemini"></div>
+		        	<div class="battleId">ID : 조한영(본인)</div>
+		        	<div class="win">2승</div>
+		        	<div class="defeat">0패</div>
+		        	<div class="rank">126등</div>
+	        	</div>
+	        <ul class="ui-listview listview scrollable">	
+	        	<div class="battlewindow" id="user">
+		        	<div class="profilemini"></div>
+		        	<div class="battleId">ID : 홍정민</div>
+		        	<div class="win">2승</div>
+		        	<div class="defeat">2패</div>
+		        	<div class="rank">234등</div>
+	        	</div>
+
+        	</ul>
+        <footer class="ui-footer ui-grid-col-1">
+            <a href="#main" class="ui-btn" id="backbattle">이전</a>
+        </footer>   
+        </section>      
+    </div>
+    
+    <div class="ui-page" id="register">
+        <header class="ui-header" data-position="fixed">
+            <h2 class="ui-title">운동 종료</h2>
+        </header>
+        <section class="ui-content">
+            <div class="finish" id="finish"></div>
+            <div class="exp" id="exp"></div>
+        </section>
+        <footer class="ui-footer ui-grid-col-1">
+        
+            <a  id="save-btn" class="ui-btn" href="#main" >Save</a>
+        </footer> 
+    </div>
+    
+</body>
+<script src="./js/core/core.js" data-main="js/main.js"></script>
+<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+<!-- load javascript file for your application -->
+<script src="js/app.js"></script>
+<script src="js/lowBatteryCheck.js"></script>
+
+</html>

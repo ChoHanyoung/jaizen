@@ -1,0 +1,117 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px auto;
+    background-color:#222;
+}
+
+.contents {
+	display: flex;
+	display: -webkit-flex;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height:320px;
+}
+
+
+.content_text {
+	font-weight:bold;
+	font-size:5em;
+	color:#fff;
+}
+
+.trainingtext {
+    position: absolute;
+    float: left;
+    top: 210px;
+    left: 50px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    color: #ffffff;
+    
+}
+.analysistext {
+    position: absolute;
+    float: left;
+    top: 210px;
+    left: 240px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    color: #ffffff;
+    
+}
+.settingtext {
+    position: absolute;
+    float: left;
+    top: 430px;
+    left: 50px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    color: #ffffff;
+    
+}
+.exittext {
+    position: absolute;
+    float: left;
+    top: 430px;
+    left: 240px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    color: #ffffff;
+    
+}
+
+
+.trainingbtn {
+    position: absolute;
+    float: left;
+    top: 90px;
+    left: 30px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    background-image: url('../image/training.png')
+    
+}
+
+.analysisbtn {
+    position: absolute;
+    float: left;
+    top: 90px;
+    left: 210px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    color: #ffffff;
+    background-image: url('../image/setting.png')
+}
+.exitbtn {
+    
+    position: absolute;
+    float: left;
+    top: 300px;
+    left: 210px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    background-image: url('../image/battle.png')
+    
+}
+
+.settingbtn {
+    position: absolute;
+    float: left;
+    top: 300px;
+    left: 30px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    background-image: url('../image/setting.png')
+    
+}

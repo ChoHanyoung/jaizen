@@ -60,7 +60,6 @@ body {
     width: 120px;
     overflow: hidden;
     color: #ffffff;
-    background-image: url('../image/setting.png')
 }
 .analysistext {
     position: absolute;
@@ -73,31 +72,29 @@ body {
     color: #ffffff;
     
 }
+
 .trainingbtn {
     position: absolute;
     float: left;
-    top: 300px;
-    left: 210px;
+    top: 90px;
+    left: 30px;
     height: 120px;
     width: 120px;
     overflow: hidden;
     background-image: url('../image/training.png')
     
 }
-
 .exitbtn {
     position: absolute;
     float: left;
-    top: 90px;
+    top: 300px;
     left: 210px;
     height: 120px;
     width: 120px;
     overflow: hidden;
-    
+    background-image: url('../image/training.png')   
 }
-
-.exit {
-    
+.settingbtn {
     position: absolute;
     float: left;
     top: 300px;
@@ -105,15 +102,14 @@ body {
     height: 120px;
     width: 120px;
     overflow: hidden;
-    background-image: url('../image/battle.png')
+    background-image: url('../image/setting.png')
     
 }
-
-.settingbtn {
+.analisisbtn {
     position: absolute;
     float: left;
     top: 90px;
-    left: 30px;
+    left: 210px;
     height: 120px;
     width: 120px;
     overflow: hidden;
@@ -336,8 +332,6 @@ body {
 
 }
 
-
-
 .window {
     position: relative;
     float: left;
@@ -452,245 +446,6 @@ body {
 	text-align: middle;
 }
 
-.profileImage{
-	position: relative;
-    float: left;
-    top: 40px;
-    height: 160px;
-    width: 160px;
-    
-}
-.profileImagePrint{
-	position: relative;
-    float: left;
-    height: 160px;
-    width: 160px;
-}
-.profileImage1{
-	position: relative;
-    float: left;
-    height: 160px;
-    width: 160px;
-    background-image: url('../image/profileimage.png')
-}
-.profileImage2{
-	position: relative;
-    float: left;
-    height: 160px;
-    width: 160px;
-    background-image: url('../image/profileimage2.png')
-}
-.profileImage3{
-	position: relative;
-    float: left;
-    height: 160px;
-    width: 160px;
-    background-image: url('../image/profileimage3.png')
-}
-.profileImage4{
-	position: relative;
-    float: left;
-    height: 160px;
-    width: 160px;
-    background-image: url('../image/profileimage4.png')
-}
-.profileImage5{
-	position: relative;
-    float: left;
-    height: 160px;
-    width: 160px;
-    background-image: url('../image/profileimage5.png')
-}
-.stat{
-	position: relative;
-    float: left;
-    top:40px;
-    height: 160px;
-    width: 200px;
-    text-align: center;
-}
-.power{
-	position: relative;
-    float: left;
-    height: 40px;
-    width: 120px;
-    top:15px;
-    text-align: left;
-}
-
-.dex{
-	position: relative;
-    float: left;
-    height: 40px;
-    width: 120px;
-    top:15px;
-    text-align: left;
-}
-
-.endurance{
-	position: relative;
-    float: left;
-    height: 40px;
-    width: 120px;
-    top:15px;
-    text-align: left;
-}
-
-.plus{
-	position: relative;
-    float: left;
-    height: 40px;
-    width: 40px;
-    top: 15px;
-    
-}
-.plus2{
-	position: relative;
-    float: left;
-    height: 40px;
-    width: 40px;
-    top: 15px;
-    
-}
-.plus3{
-	position: relative;
-    float: left;
-    height: 40px;
-    width: 40px;
-    top: 15px;
-    
-}
-.plusimage{
-	background-image: url('../image/plus.png')
-}
-.plusactiveimage{
-	background-image: url('../image/plusactive.png')
-}
-.exppoint{
-	position: relative;
-    float: left;
-    top: 40px;
-    height: 80px;
-    width: 160px;
-    margin-top:30px;
-    margin-right:20px;
-    text-align: center;
-}
-.exppoint2{
-	position: relative;
-    float: left;
-    margin-top:10px;
-    margin-left:25px;
-    text-align: center;
-}
-.exppoint3{
-	position: relative;
-    float: left;
-    margin-top:10px;
-    margin-left:10px;
-    text-align: center;
-}
-.exppoint4{
-	position: relative;
-    float: left;
-    margin-top:10px;
-    margin-left:10px;
-    text-align: center;
-}
-.statpoint{
-	position: relative;
-    float: left;
-    top: 40px;
-    height: 80px;
-    width: 160px;
-    margin-top:30px;
-    margin-right:20px;
-    text-align: center;
-}
-
-.statpoint2{
-	position: relative;
-    float: left;
-   
-    margin-top:10px;
-    margin-left:70px;
-}
-.statvalue{
-	position: relative;
-    float: left;
-    height: 40px;
-    width: 40px;
-    top: 15px;	
-}
-.statvalue2{
-	position: relative;
-    float: left;
-    height: 40px;
-    width: 40px;
-    top: 15px;	
-}
-.statvalue3{
-	position: relative;
-    float: left;
-    height: 40px;
-    width: 40px;
-    top: 15px;	
-}
-.profilemini{
-	position: relative;
-    float: left;
-    top: 20px;
-    height: 120px;
-    width: 120px;
-    background-image: url('../image/profilemini.png')
-}
-.battleId{
-	position: relative;
-    float: left;
-    top: 20px;
-    height: 50px;
-    width: 240px;
-    margin-top: 20px;
-    
-}
-.win{
-	position: relative;
-    float: left;
-    top: 20px;
-    height: 50px;
-    width: 80px;
-    font-size: 0.75em;
-    text-align: center;
-    margin-top: 10px;
-}
-.defeat{
-	position: relative;
-    float: left;
-    top: 20px;
-    height: 50px;
-    width: 80px;
-    font-size: 0.75em;
-    text-align: center;
-    margin-top: 10px;
-}
-.rank{
-	position: relative;
-    float: left;
-    top: 20px;
-    height: 50px;
-    width: 80px;
-    font-size: 0.75em;
-    text-align: center;
-    margin-top: 10px;
-}
-.battlewindow{
-	position: relative;
-    float: left;
-    height: 120px;
-    width: 360px;
-    margin-top: 10px;
-    
-}
 
 .listbox {
     border-top: 1px solid #333333;

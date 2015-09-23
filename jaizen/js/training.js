@@ -1,7 +1,6 @@
 define({
 	name:'training',
 	requires:[
-	          'profile',
 	          'core/event',
 	          'core/tizen'
 	          
@@ -27,8 +26,6 @@ define({
 			title=Title;
 		}
 		function onsetBtnElClick(){
-			
-			
 		}
 		
 		function print(){
@@ -57,8 +54,8 @@ define({
 				if(setTime>setCount){
 					var temp=setCount*count;
 					
-					req.profile.setExp(temp);
-					req.profile.init();
+					//req.profile.setExp(temp);
+					//req.profile.init();
 					tau.changePage('#register');
 				}
 			}

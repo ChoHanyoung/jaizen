@@ -9,14 +9,11 @@ define({
 	          'heightSetting',
 	          'weightSetting',
 	          'category',
-	          'profile',
-	          'battle',
-	          'profileImageSetting',
 	          'genderSetting'
 	          ],
 	def: function maininit(req){
 		
-		
+		var app = req.core.application;
 		
 		function onPageShow(){
 			
@@ -29,26 +26,30 @@ define({
 		}
 		
 		function ontrainingbtnClick(){
+			console.log('training');
+
 			tau.changePage('#category');
 		}
-		function onprofileClick(){
-			tau.changePage('#profile');
+		function onanlisisClick(){
+			console.log('analisis');
 		}
-		function onbattleClick(){
-			req.battle.print();
+		
+		function onexitClick(){
+			console.log('exit');
+			app.exit();
 		}
 		
 		
 		function bindEvents() {
 			var settingbtn = document.getElementById('setting-btn'),
 			trainingbtn = document.getElementById('training-btn'),
-			profile = document.getElementById('profile2'),
-			battle = document.getElementById('battle');
+			analisisbtn = document.getElementById('analisis-btn'),
+			exitbtn = document.getElementById('exit-btn');
 				
 			settingbtn.addEventListener('click', onsettingbtnClick);
 			trainingbtn.addEventListener('click', ontrainingbtnClick);
-			profile.addEventListener('click', onprofileClick);
-			battle.addEventListener('click', onbattleClick);
+			analisisbtn.addEventListener('click', onanlisisClick);
+			exitbtn.addEventListener('click', onexitClick);
 
 			page.addEventListener('pageshow', onPageShow);
 		}

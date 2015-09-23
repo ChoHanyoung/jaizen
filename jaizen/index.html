@@ -13,18 +13,16 @@
 	<div class="ui-page ui-page-active" id="main">
         <header class="ui-header ui-has-more">
             <a href="index.html" class="head">자이젠타이젠</a>
-
         </header>
         <section class="ui-content">
-        	
-            <a href="#" id="setting-btn" class="trainingbtn"></a>
             <a href="#" id="training-btn" class="trainingbtn"></a>
-            <a href="#" id="profile2" class="settingbtn"></a>
-            <a href="#" id="battle" class="exitbtn"></a>
-            <div class="profiletext">트레이닝</div>
-            <div class=analysistext>분석</div>
+            <a href="#" id="analisis-btn" class="analisisbtn"></a>
+            <a href="#" id="setting-btn" class="settingbtn"></a>
+            <a href="#" id="exit-btn" class="exitbtn"></a>
+            <div class="trainingtext">트레이닝</div>
+            <div class="analysistext">분석</div>
             <div class="settingtext">세팅</div>
-            <div class="exit">종료</div>
+            <div class="exittext">종료</div>
         </section>      
     </div>
     
@@ -88,58 +86,6 @@
         </footer>
        </section>      
    </div>
-    
-    <div class="ui-page" id="profile">
-        <header class="ui-header ui-has-more">
-            <div href="index.html" class="head">profile</div>
-		 
-        </header>
-        <section class="ui-content">
-        	<div class="profileImage" id='profileimage'>
-        		<span class="profileImagePrint"></span>
-        	</div>
-        	<div class="stat">
-        		<span class ="power">근력</span>
-        		<span class="statvalue"></span>
-        		<span class ="plus" id= 'plusPower'></span>
-        		<span class ="dex">순발력 </span>
-        		<span class="statvalue2"></span>
-        		<span class ="plus2" id= 'plusDex'></span>
-        		<span class ="endurance">지구력 </span>
-        		<span class="statvalue3"></span>
-        		<span class = "plus3" id= 'plusEndurance'></span>
-        	</div>
-        	<div class="exppoint">경험치<br> 
-        		<span class="exppoint2"></span>
-        		<span class="exppoint4">/</span>
-        		<span class="exppoint3"></span>
-        	</div>
-        	<div class="statpoint">스텟포인트 <br>
-        		<span class="statpoint2"></span>	
-        	</div>
-        </section> 
-        <footer class="ui-footer ui-grid-col-2">
-            <div class="ok ui-btn"  id='backpro'>이전</div>
-            <div class="cancel ui-btn"  id='log'>내역보기</div>
-        </footer>     
-    </div>
-    
-    <div class="ui-page" id="profileImageSetting">
-        <header class="ui-header ui-has-more">
-            <a href="index.html" class="head">profileImage</a>
-        </header>
-        <section class="ui-content">       	
-        	<ul class="ui-listview listview scrollable">       		
-        		<div class="category"><div class='profileImage1' id='image1'></div></div>
-        		<div class="category"><div class='profileImage2' id='image2'></div></div>
-        		<div class="category"><div class='profileImage3' id='image3'></div></div>
-        		<div class="category"><div class='profileImage4' id='image4'></div></div>
-        		<div class="category"><div class='profileImage5' id='image5'></div></div>
-        		<div class="category"></div>    		
-        	</ul>
-        	<div class="ui-btn" id="backpi">이전</div>
-	  </section>      
-    </div>
     
     <div class="ui-page" id="setting">
         <header class="ui-header ui-has-more">
@@ -378,112 +324,7 @@
         </footer>
         </section>      
     </div>
-       
-     <div class="ui-page" id="trophy">
-        <header class="ui-header ui-has-more">
-            <a href="index.html" class="head">trophy</a>
-
-        </header>
-        <section class="ui-content">
-        	아령 30/50<br>
-        	팔(근력+1 지구력+1 순반력 +1)<br>
-        	팔굽혀펴기 10/50<br>
-        	가슴(근력+1 지구력+1 순반력 +1)
-        <footer class="ui-footer ui-grid-col-2">
-            <a class="cancel ui-btn" id="settingsCancel" href="#main">이전</a>
-        </footer>
-        </section>      
-    </div>
-    
-    <div class="ui-page" id="battle">
-        <header class="ui-header ui-has-more">
-            <a href="index.html" class="head">battle</a>
-
-        </header>
-        <section class="ui-content">
-	        	<div class="battlewindow">
-		        	<div class="profilemini"></div>
-		        	<div class="battleId">ID : 조한영(본인)</div>
-		        	<div class="win">1승</div>
-		        	<div class="defeat">0패</div>
-		        	<div class="rank">234등</div>
-	        	</div>
-	        <ul class="ui-listview listview scrollable">	
-	        	<div class="battlewindow" id="user">
-		        	<div class="profilemini"></div>
-		        	<div class="battleId">ID : 홍정민</div>
-		        	<div class="win">2승</div>
-		        	<div class="defeat">1패</div>
-		        	<div class="rank">126등</div>
-	        	</div>
-
-        	</ul>
-        <footer class="ui-footer ui-grid-col-1">
-            <div class="ui-btn" id="backbattle">이전</div>
-        </footer>   
-        </section>      
-    </div>
-    
-    <div class="ui-page" id="battleresult">
-        <header class="ui-header ui-has-more">
-            <a href="index.html" class="head">battle</a>
-
-        </header>
-        <section class="ui-content">
-        	
-	        <div class="bat">
-	        	<span class="battlevideo"></span>
-	        </div>        		
-        	
-        <footer class="ui-footer ui-grid-col-1">
-            <div class="ui-btn" id="backbattleresult">확인</div>
-        </footer>   
-        </section>      
-    </div>
-    
-     <div class="ui-page" id="battle2">
-        <header class="ui-header ui-has-more">
-            <a href="index.html" class="head">battle</a>
-
-        </header>
-        <section class="ui-content">
-	        	<div class="battlewindow">
-		        	<div class="profilemini"></div>
-		        	<div class="battleId">ID : 조한영(본인)</div>
-		        	<div class="win">2승</div>
-		        	<div class="defeat">0패</div>
-		        	<div class="rank">126등</div>
-	        	</div>
-	        <ul class="ui-listview listview scrollable">	
-	        	<div class="battlewindow" id="user">
-		        	<div class="profilemini"></div>
-		        	<div class="battleId">ID : 홍정민</div>
-		        	<div class="win">2승</div>
-		        	<div class="defeat">2패</div>
-		        	<div class="rank">234등</div>
-	        	</div>
-
-        	</ul>
-        <footer class="ui-footer ui-grid-col-1">
-            <a href="#main" class="ui-btn" id="backbattle">이전</a>
-        </footer>   
-        </section>      
-    </div>
-    
-    <div class="ui-page" id="register">
-        <header class="ui-header" data-position="fixed">
-            <h2 class="ui-title">운동 종료</h2>
-        </header>
-        <section class="ui-content">
-            <div class="finish" id="finish"></div>
-            <div class="exp" id="exp"></div>
-        </section>
-        <footer class="ui-footer ui-grid-col-1">
-        
-            <a  id="save-btn" class="ui-btn" href="#main" >Save</a>
-        </footer> 
-    </div>
-    
+         
 </body>
 <script src="./js/core/core.js" data-main="js/main.js"></script>
 <script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>

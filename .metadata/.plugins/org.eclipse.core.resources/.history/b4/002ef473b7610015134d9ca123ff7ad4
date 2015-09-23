@@ -1,0 +1,504 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px auto;
+    background-color:#222;
+}
+
+.contents {
+	display: flex;
+	display: -webkit-flex;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height:320px;
+}
+
+.content-padding {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.content_text {
+	font-weight:bold;
+	font-size:5em;
+	color:#fff;
+}
+
+
+.trainingtext {
+    position: absolute;
+    float: left;
+    top: 220px;
+    left: 50px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    color: #ffffff;
+    
+}
+.exittext {
+    position: absolute;
+    float: left;
+    top: 430px;
+    left: 240px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    color: #ffffff;
+    
+}
+.settingtext {
+    position: absolute;
+    float: left;
+    top: 430px;
+    left: 60px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    color: #ffffff;
+    background-image: url('../image/setting.png')
+}
+.analysistext {
+    position: absolute;
+    float: left;
+    top: 220px;
+    left: 210px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    color: #ffffff;
+    
+}
+
+.trainingbtn {
+    position: absolute;
+    float: left;
+    top: 90px;
+    left: 30px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    background-image: url('../image/training.png')
+    
+}
+.exitbtn {
+    position: absolute;
+    float: left;
+    top: 300px;
+    left: 210px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    background-image: url('../image/training.png')   
+}
+.settingbtn {
+    position: absolute;
+    float: left;
+    top: 300px;
+    left: 30px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    background-image: url('../image/setting.png')
+    
+}
+.analisisbtn {
+    position: absolute;
+    float: left;
+    top: 90px;
+    left: 210px;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    background-image: url('../image/setting.png')
+    
+}
+
+.back2 {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/back.png');
+
+}
+.chest {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/chest.png');
+
+}
+.leg {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/leg.png');
+
+}
+.arm {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/arm.png');
+
+}
+.adominal {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/adominal.png');
+
+}
+.sholder {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/sholder.png');
+
+}
+.dumbbell {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/dumbbell.png');
+
+}
+.deadlift {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/deadlift.png');
+
+}
+.benchpress {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/benchpress.png');
+
+}
+.chin {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/chin.png');
+
+}
+.kettlebell {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/kettlebell.png');
+
+}
+.sholderpress {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/sholderpress.png');
+
+}
+.finish{
+	position: relative;
+    float: left;
+  	top:30px;
+    height: 180px;
+    width: 360px;
+    overflow: hidden;
+    background-image: url('../image/finish.png');
+}
+.exp{
+	position: relative;
+    float: left;
+  	left:90px;
+  	top: 45px;
+    height: 120px;
+    width: 180px;
+    overflow: hidden;
+    background-image: url('../image/exp.png');
+}
+.setimage {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    background-image: url('../image/setempty.png');
+    font-size: 20vw;
+
+}
+.setimagefont {
+    position: relative;
+    float: left;
+    top: 27px;
+    left: 40px;
+    text-align:center;
+    font-size: 20vw;
+}
+.countimagefont {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 30px;
+    font-size: 20vw;
+}
+.countimage {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 25px;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+
+    background-image: url('../image/countempty.png');
+
+}
+
+
+
+.window {
+    position: relative;
+    float: left;
+    height: 40%;
+    width: 50%;
+    border: 1px solid #ff9100;
+    overflow: hidden;
+}
+.category {
+    position: relative;
+    float: left;
+    height: 200px;
+    width: 180px;
+    overflow: hidden;
+    text-align: center;
+
+}
+.setfont{
+	text-align: center;
+}
+.select{
+	position: relative;
+	width:100px;
+	left: 45px;
+	text-align: center;
+}
+.back{
+	position: relative;
+    float: left;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+
+    background-color: rgba(2, 56, 92, 1);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.window .title {
+    position: absolute;
+    top: 2vh;
+    width: 100%;
+    text-align: center;
+    color: #f5f2ed;
+    font-size: 7.5vw;
+}
+.setting{
+	position: relative;
+    float: left;
+    width:100%;
+    height:60px;
+    top:60px;
+}
+.age{
+	position: relative;
+    float: left;
+    width:100%;
+    height:60px;
+    top:30px;
+    font-size: 10vw;
+}
+.weight{
+	
+}
+.height{
+	
+}
+.value {
+    position: absolute;
+    color: #f5f2ed;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    bottom: 1vh;
+    word-spacing: -.25em;
+}
+
+.value span {
+    font-size: 10vw;
+}
+
+.time {
+	border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.set {
+    border-top: 0;
+    border-left: 0;
+}
+.count {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.HRM {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.set_count{
+	
+}
+.training{
+	position: relative;
+    float: left;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+	text-align: center;
+	font-size: 10vw;
+	text-align: middle;
+}
+
+
+.listbox {
+    border-top: 1px solid #333333;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+}
+
+.listbox .listview li {
+    height: 75px;
+    border-bottom: 1px solid #333333;
+}
+
+.listbox .listview li input[type="radio"] {
+    position: absolute;
+    left: 28px;
+    margin-top: 12px;
+}
+
+.listbox .listview li label.labelradio {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 100px;
+    display: block;
+}
+
+.bat{
+	
+}
+.settings-value {
+    position: absolute;
+    right: 16px;
+}
+.battlevideo{
+	position: relative;
+    float: left;
+	margin-top:80px;
+    margin-left:30px;
+}
+.HRMimage{
+	position: relative;
+	top: 40px;
+	left:15px;
+    float: left;
+    height:120px;
+    width:160px;
+	background-image: url('../image/hrm.png')
+}
+.HRMvalue{
+	position: relative;
+	top: 40px;
+	left:60px;
+}

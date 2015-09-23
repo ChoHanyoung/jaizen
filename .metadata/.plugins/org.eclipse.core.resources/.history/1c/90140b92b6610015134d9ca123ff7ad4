@@ -1,0 +1,71 @@
+define({
+	name : 'main',
+	requires:[
+	          'core/event',
+	          'core/template',
+	          'core/systeminfo',
+	          'core/application',
+	          'ageSetting',
+	          'heightSetting',
+	          'weightSetting',
+	          'category',
+	          'genderSetting'
+	          ],
+	def: function maininit(req){
+		
+		
+		
+		function onPageShow(){
+			
+		}
+		
+		function onsettingbtnClick(){
+			console.log('setting');
+
+			tau.changePage('#setting');
+		}
+		
+		function ontrainingbtnClick(){
+			tau.changePage('#category');
+		}
+		function onprofileClick(){
+			console.log('profile');
+		}
+		
+		function onbattleClick(){
+			console.log('battle');
+		}
+		
+		
+		function bindEvents() {
+			var settingbtn = document.getElementById('setting-btn'),
+			trainingbtn = document.getElementById('training-btn'),
+			profile = document.getElementById('profile2'),
+			battle = document.getElementById('battle');
+				
+			settingbtn.addEventListener('click', onsettingbtnClick);
+			trainingbtn.addEventListener('click', ontrainingbtnClick);
+			profile.addEventListener('click', onprofileClick);
+			battle.addEventListener('click', onbattleClick);
+
+			page.addEventListener('pageshow', onPageShow);
+		}
+		
+		function init() {
+			console.log('main');
+		    page = document.getElementById('main');
+		    bindEvents();
+		}
+		
+		return {
+			init: init 
+        };
+		
+	}
+})
+	
+    
+  
+
+
+    

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;jaizen/js/rigister.js&apos; to &apos;register.js&apos;" description="Rename resource &apos;rigister.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="js/rigister.js" name="register.js" stamp="1442986361891" updateReferences="true"/>
+</session>

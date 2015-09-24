@@ -1,2 +1,4 @@
 commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>\uC218\uC815\uB41C \uC2DC\uB098\uB9AC\uC624\uB85C \uD544\uC694\uC5C6\uB294 \uBD80\uBD84 \uC0AD\uC81C</message>\r\n</messages>
 eclipse.preferences.version=1
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300

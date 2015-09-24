@@ -5,11 +5,11 @@ define({
 	          'core/template',
 	          'core/systeminfo',
 	          'core/application',
-	          'ageSetting',
-	          'heightSetting',
-	          'weightSetting',
 	          'category',
-	          'genderSetting'
+	          'view/ageSetting',
+	          'view/heightSetting',
+	          'view/weightSetting',
+	          'view/genderSetting'
 	          ],
 	def: function maininit(req){
 		

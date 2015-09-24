@@ -1,0 +1,88 @@
+define({
+	name : 'setting',
+	requires:[
+	          'core/storage/idb',
+	          'core/event',
+	          'ageSetting',
+	          'heightSetting',
+	          'weightSetting',
+	          'genderSetting',
+	          'model/setting'
+	          
+	          ],
+	def: function settinginit(req){
+		
+		var s = req.core.storage.idb,
+        	e = req.core.event,
+        	page=null,
+			age=null,
+			weight=null,
+			height=null,
+			gender=null,
+			setting=req.model.setting;
+		
+		
+		function onheightBtnElClick(){
+			tau.changePage('#heightSetting');
+		}
+		function onweightBtnElClick(){
+			tau.changePage('#weightSetting');
+		}
+		function onageBtnElClick(){
+			tau.changePage('#ageSetting');
+		}
+		function ongenderBtnElClick(){
+			tau.changePage('#genderSetting');
+		}
+		function onbackBtnElClick(){
+			tau.changePage('#main');
+		}
+		
+		function print(){
+			
+			age.innerHTML='['+setting.getAge()+'+]';
+			weight.innerHTML='['+setting.getWeight()+'+]';
+			height.innerHTML='['+setting.getHeight()+'+]';
+			gender.innerHTML='['+setting.getGender()+']';
+		}
+		function bindEvents() {
+			var ageBtnEl = document.getElementById('age'),
+			weightBtnEl = document.getElementById('weight'),
+			heightBtnEl = document.getElementById('height'),
+			genderBtnEl = document.getElementById('gender'),
+			backBtnEl = document.getElementById('backset');
+			
+			ageBtnEl.addEventListener('click', onageBtnElClick);
+			weightBtnEl.addEventListener('click', onweightBtnElClick);
+			genderBtnEl.addEventListener('click', ongenderBtnElClick);
+			heightBtnEl.addEventListener('click', onheightBtnElClick);
+			backBtnEl.addEventListener('click', onbackBtnElClick);
+		}
+		
+		function init() {
+			console.log("setting");
+		    page = document.getElementById('setting');
+		    bindEvents();
+		    age = page.querySelector('.setting .setAge');
+			weight = page.querySelector('.setting .setWeight');
+			height = page.querySelector('.setting .setHeight');
+			gender = page.querySelector('.setting .setGender');
+		   
+			
+		    print();
+		    return;
+		}
+		
+		return {
+			init: init,
+			print: print
+        };
+		
+	}
+})
+	
+    
+  
+
+
+    

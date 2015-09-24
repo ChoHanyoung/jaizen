@@ -1,0 +1,75 @@
+define({
+	name : 'main',
+	requires:[
+	          'core/event',
+	          'core/template',
+	          'core/systeminfo',
+	          'core/application',
+	          'category',
+	          'model/setting'
+	          //'ageSetting',
+	          //'heightSetting',
+	          //'weightSetting',
+	          //'genderSetting'
+	          ],
+	def: function maininit(req){
+		
+		var app = req.core.application;
+		
+		function onPageShow(){
+			
+		}
+		
+		function onsettingbtnClick(){
+			console.log('setting');
+
+			tau.changePage('#setting');
+		}
+		
+		function ontrainingbtnClick(){
+			console.log('training');
+
+			tau.changePage('#category');
+		}
+		function onanlisisClick(){
+			console.log('analisis');
+		}
+		
+		function onexitClick(){
+			console.log('exit');
+			app.exit();
+		}
+		
+		
+		function bindEvents() {
+			var settingbtn = document.getElementById('setting-btn'),
+			trainingbtn = document.getElementById('training-btn'),
+			analisisbtn = document.getElementById('analisis-btn'),
+			exitbtn = document.getElementById('exit-btn');
+				
+			settingbtn.addEventListener('click', onsettingbtnClick);
+			trainingbtn.addEventListener('click', ontrainingbtnClick);
+			analisisbtn.addEventListener('click', onanlisisClick);
+			exitbtn.addEventListener('click', onexitClick);
+
+			page.addEventListener('pageshow', onPageShow);
+		}
+		
+		function init() {
+			console.log('main');
+		    page = document.getElementById('main');
+		    bindEvents();
+		}
+		
+		return {
+			init: init 
+        };
+		
+	}
+})
+	
+    
+  
+
+
+    

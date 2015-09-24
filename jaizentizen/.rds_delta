@@ -1,6 +1,11 @@
 #delete
+res/wgt/css/setting.css
+res/wgt/js/app.js
+res/wgt/js/lowBatteryCheck.js
+res/wgt/js/setting
 #add
 #modify
 res/wgt/author-signature.xml
 res/wgt/signature1.xml
+res/wgt/index.html
 res/wgt/js/main.js

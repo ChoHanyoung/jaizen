@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profiles version="3.0">
+<profile name="default">
+<profileitem ca="" distributor="0" key="C:\tizen-sdk-data\keystore\author.p12" password="6zHszZ2huBvGYRytc+XWyw==" rootca=""/>
+<profileitem ca="" distributor="1" key="C:\tizen-sdk-data\keystore\distributor.p12" password="NyRkwSKsEdzavcFXzY5Ifg==" rootca=""/>
+</profile>
+</profiles>

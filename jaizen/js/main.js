@@ -20,14 +20,10 @@ define({
 		}
 		
 		function onsettingbtnClick(){
-			console.log('setting');
-
 			tau.changePage('#setting');
 		}
 		
 		function ontrainingbtnClick(){
-			console.log('training');
-
 			tau.changePage('#category');
 		}
 		function onanlisisClick(){
@@ -35,7 +31,6 @@ define({
 		}
 		
 		function onexitClick(){
-			console.log('exit');
 			app.exit();
 		}
 		

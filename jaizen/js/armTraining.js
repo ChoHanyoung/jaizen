@@ -1,13 +1,13 @@
 dumbbell
 define({
 	name:'armTraining',
-	requires:['training',
+	requires:['model/training',
 	          'core/event',
 	          'set'
 	          
 	          ],
 	def:function armTraininginit(req){
-		var training=req.training;
+		var training=req.model.training;
 		
 
 		function ondumbbellBtnElClick(){

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/jaizen" version="1.0.0" viewmodes="maximized">
-    <tizen:application id="ynOrJ08qz0.jaizen" package="ynOrJ08qz0" required_version="1.0"/>
+    <tizen:application id="ynOrJ08qz0.jaizen" package="ynOrJ08qz0" required_version="2.2"/>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.normal.320.320"/>
     <feature name="http://developer.samsung.com/tizen/feature/heart_rate_monitor"/>
+    <feature name="http://tizen.org/feature/sensor.heart_rate_monitor"/>
+    <feature name="http://tizen.org/feature/sensor.gyroscope"/>
+    <feature name="http://tizen.org/feature/sensor.pedometer"/>
     <icon src="icon.png"/>
     <name>jaizen</name>
     <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/healthinfo"/>
     <tizen:privilege name="http://developer.samsung.com/privilege/healthinfo"/>
-    <tizen:setting hwkey-event="enable"/>
+    <tizen:privilege name="http://tizen.org/privilege/location"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
 </widget>

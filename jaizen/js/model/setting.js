@@ -50,7 +50,7 @@ define({
 		
 		
 		function init() {
-			console.log("settingmodel");
+			console.log("model/setting");
 			
 		    return;
 		}

@@ -73,15 +73,15 @@
 		<item value="org.tizen.base.feature:2.0.0"/>
 		<item value="org.tizen.base.native.feature:2.0.0"/>
 		<item value="org.tizen.base.web.feature:2.0.0"/>
-		<item value="org.tizen.common.feature:2.0.0.201508201852"/>
-		<item value="org.tizen.dynamicanalysis.ide.eplugin.feature:2.1.0.201503201802"/>
-		<item value="org.tizen.nativeappcommon.feature:2.0.0.201503201755"/>
+		<item value="org.tizen.common.feature:2.0.0.201508201853"/>
+		<item value="org.tizen.dynamicanalysis.ide.eplugin.feature:2.1.0.201503201806"/>
+		<item value="org.tizen.nativeappcommon.feature:2.0.0.201503201733"/>
 		<item value="org.tizen.nativecommon.feature:2.0.0.201507272103"/>
-		<item value="org.tizen.nativecore.ext.feature:1.0.0.201507141453"/>
-		<item value="org.tizen.nativecore.feature:2.0.0.201508211506"/>
-		<item value="org.tizen.profiler.feature:1.0.0.201503201801"/>
-		<item value="org.tizen.web.assignmenttracing.feature:1.0.0.201408221756"/>
-		<item value="org.tizen.web.feature:2.0.0.201508201854"/>
-		<item value="org.tizen.web.simulator.feature:1.0.0.201504211100"/>
+		<item value="org.tizen.nativecore.ext.feature:1.0.0.201507141452"/>
+		<item value="org.tizen.nativecore.feature:2.0.0.201508211505"/>
+		<item value="org.tizen.profiler.feature:1.0.0.201503201808"/>
+		<item value="org.tizen.web.assignmenttracing.feature:1.0.0.201408221757"/>
+		<item value="org.tizen.web.feature:2.0.0.201508201856"/>
+		<item value="org.tizen.web.simulator.feature:1.0.0.201504211059"/>
 	</list>
 </section>

@@ -28,7 +28,7 @@
     
     <div class="ui-page" id="category">
         <header class="ui-header ui-has-more">
-            <div href="index.html" class="head">부위</div>
+            <a href="index.html" class="head">부위</a>
 
         </header>
         <section class="ui-content">
@@ -45,22 +45,24 @@
         </section>      
     </div>
     
-    <div class="ui-page" id="armTraining">
+    <div class="ui-page" id="training">
         <header class="ui-header ui-has-more">
-            <div href="index.html" class="head">arm</div>
+            <a href="index.html" class="head">training</a>
 		
         </header>
         <section class="ui-content">
         	<ul class="ui-listview listview scrollable">
 	        	<div class="category" id="dumbbell"><div class="dumbbell"></div>아령</div>
-	        	<div class="category" id="deadlift"><div class="deadlift"></div>데드리프트</div>
+	        	<div class="category"></div>
+	        	<div class="empty"></div>
+	       <!--	<div class="category" id="deadlift"><div class="deadlift"></div>데드리프트</div>
 	        	<div class="category" id="benchpress"><div class="benchpress"></div>벤치프레스</div>
 	        	<div class="category" id="chin"><div class="chin"></div>턱걸이</div>
 	        	<div class="category" id="kettlebell"><div class="kettlebell"></div>케틀벨</div>
 	        	<div class="category" id="sholderpress"><div class="sholderpress"></div>숄더프레스</div>
-
+			-->
         	</ul>
-            <div class="category back" id="backat">이전</div>
+            <div class="category back" id="backtraining">이전</div>
 
         </section>      
     </div>
@@ -95,7 +97,7 @@
         <section class="ui-content">
         <ul class="ui-listview listview scrollable">
         	<div id='age' class="setting">
-	        	<span calss="settings-value">age</span>
+	        	<span >age</span>
 	        	<span class="setAge settings-value"></span>
 	        	
         	</div>
@@ -325,6 +327,93 @@
         </section>      
     </div>
          
+    <div class="ui-page" id="detailAnalisis">
+        <header class="ui-header ui-has-more">
+            <div class="head">training</div>
+
+        </header>
+        <section class="ui-content">
+        	
+        	<div class="window set">
+        		<div class ="title">Set</div>
+        		<div class = "value">
+        			<span class="set_count"></span>
+        			<span class="middle">/</span>
+        			<span class="max_set"></span>
+        		</div>	
+        	</div>
+        	
+        	<div class="window count">
+        		<div class ="title">Count</div>
+        		<div class = "value">
+        			<span class="count">0</span>
+        			<span class="middle">/</span>
+        			<span class="max_count"></span>
+        		</div>	
+        	
+        	</div>
+        	<div class="window time">
+        		<div class="title">Time</div>
+                <div class="value">
+                    
+                    <span class="minutes">00</span>
+                    <span class="sep-right">:</span>
+                    <span class="seconds">00</span>
+                </div>
+        	
+        	</div>
+        	<div class="window HRM">
+        		<div class="title">HRM</div>
+               
+                <div class="HRMimage">
+                	<span class='HRMvalue'>00</span>
+                </div>
+
+        	</div>
+        	
+			        
+        <footer class="ui-footer ui-grid-col-1">
+            <a class="ok ui-btn" id="ok">Count++</a>
+            <a class="cancel ui-btn" id="backT" href="#">이전</a>
+        </footer>
+        </section>      
+    </div>
+	
+	<div class="ui-page" id="analisis">
+        <header class="ui-header ui-has-more">
+            <a href="index.html" class="head">analisis</a>
+
+        </header>
+        <section class="ui-content">
+        <ul class="ui-listview listview scrollable">
+        	<div id='age' class="setting">
+	        	<span class="settings-value">age</span>
+	        	<span class="setAge settings-value"></span>
+	        	
+        	</div>
+        	<div id='weight' class='setting'>
+        		<span>weight</span>
+	        	<span class="setWeight settings-value"></span>
+	        	
+        	</div>
+        	<div id='height' class='setting'>
+	        	<span>height </span>
+	        	<span class="setHeight settings-value"></span>
+	        	
+        	</div>
+        	<div id='gender' class='setting'>
+	        	<span>gender </span>
+	        	<span class="setGender settings-value"></span>
+	        	
+        	</div>
+        	</ul>
+        <footer class="ui-footer ui-grid-col-1">
+            <div class="ui-btn" id="backset">이전</div>
+        </footer>   
+        </section>      
+    </div>
+    
+
 </body>
 <script src="./js/core/core.js" data-main="js/main.js"></script>
 <script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>

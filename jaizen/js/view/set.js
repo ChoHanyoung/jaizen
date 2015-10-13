@@ -1,5 +1,5 @@
 define({
-	name:'set',
+	name:'view/set',
 	requires:['model/training',
 	          'core/event',
 	          'view/training'
@@ -43,10 +43,10 @@ define({
 			
 		}
 		function onstartBtnElClick(){
-
+			
 			training.setCount(countvalue);
 			training.setSetCount(setvalue);
-			temp=training.init();
+			//temp=training.init();
 			req.view.training.start();
 			req.model.training.start();
 			tau.changePage('#trainingStart');
@@ -54,7 +54,7 @@ define({
 		}
 		
 		function onbackBtnElClick(){
-			tau.changePage('#armTraining');
+			tau.changePage('#training');
 		}
 		
 		function bindEvents() {

@@ -281,6 +281,7 @@ define({
         }
 
         function init() {
+        	console.log('idb');
             open();
         }
 

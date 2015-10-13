@@ -70,7 +70,7 @@ body {
     width: 120px;
     overflow: hidden;
     color: #ffffff;
-    
+    text-align: center;
 }
 
 .trainingbtn {
@@ -92,7 +92,7 @@ body {
     height: 120px;
     width: 120px;
     overflow: hidden;
-    background-image: url('../image/training.png')   
+    background-image: url('../image/exit.png')   
 }
 .settingbtn {
     position: absolute;
@@ -113,7 +113,7 @@ body {
     height: 120px;
     width: 120px;
     overflow: hidden;
-    background-image: url('../image/setting.png')
+    background-image: url('../image/analisis.png')
     
 }
 
@@ -349,6 +349,15 @@ body {
     text-align: center;
 
 }
+.empty {
+    position: relative;
+    float: left;
+    height: 160px;
+    width: 180px;
+    overflow: hidden;
+    text-align: center;
+
+}
 .setfont{
 	text-align: center;
 }
@@ -367,6 +376,7 @@ body {
 
     background-color: rgba(2, 56, 92, 1);
     text-align: center;
+    vertical-align:middle;
     vertical-align: middle;
 }
 
@@ -443,7 +453,7 @@ body {
     overflow: hidden;
 	text-align: center;
 	font-size: 10vw;
-	text-align: middle;
+	vertical-align: middle;
 }
 
 

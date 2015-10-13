@@ -9,50 +9,81 @@ define({
 		
 		var s = req.core.storage.idb,
         	e = req.core.event,
-			agevalue=10,
-			weightvalue=40,
-			heightvalue=150,
-			gender=null,
-			settings = null,
+			gender=null,     
+			settings = [],
             STORAGE_KEY = 'settings';
-			gendervalue="M";
 		
-		
+		function saveSettings() {
+            s.add(STORAGE_KEY, settings);
+        }
 		
 		function setAge(Age){
-			console.log('setage');
-			agevalue=Age;	
-		}
-		function setGender(Gender){
-			gendervalue=Gender;	
+			settings[0]=Age;
+			saveSettings();
 		}
 		
 		function setWeight(Weight){
-			weightvalue=Weight;	
+			settings[1]=Weight;	
+			saveSettings();
 		}
 		
 		function setHeight(Height){
-			heightvalue=Height;	
+			settings[2]=Height;	
+			saveSettings();
 		}
-		
+		function setGender(Gender){
+			settings[3]=Gender;	
+			saveSettings();
+		}
 		function getAge(){
-			return agevalue;
+			return settings[0];
 		}
 		function getWeight(){
-			return weightvalue;
+			return settings[1];
 		}
 		function getHeight(){
-			return heightvalue;
+			return settings[2];
 		}
 		function getGender(){
-			return gendervalue;
+			return settings[3];
 		}
-		
-		
+
+        function onRead(ev) {
+            if (ev.detail.key !== STORAGE_KEY) {
+                return;
+            }
+            if (typeof ev.detail.value !== 'object') {
+                settings[0] =20;
+                settings[1] =60;
+                settings[2] =160;
+                settings[3] ='M';
+                saveSettings();
+            } else {
+                settings = ev.detail.value;
+            }
+            e.fire('ready');
+        }
+
+        function onWrite(ev) {
+            if (ev.detail.key !== STORAGE_KEY) {
+                return;
+            }
+            e.fire('save', ev.detail.value);
+        }
+
+        e.on({
+            'core.storage.idb.write': onWrite,
+            'core.storage.idb.read': onRead
+        });
+
 		function init() {
 			console.log("model/setting");
-			
-		    return;
+	       
+			 if (s.isReady()) {
+				 s.get(STORAGE_KEY);
+	         } else {
+	             e.listen('core.storage.idb.open', init);
+	         }
 		}
 		
 		return {

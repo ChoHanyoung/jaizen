@@ -1,12 +1,12 @@
 dumbbell
 define({
-	name:'armTraining',
+	name:'view/category',
 	requires:['model/training',
 	          'core/event',
-	          'set'
+	          'view/set'
 	          
 	          ],
-	def:function armTraininginit(req){
+	def:function categoryinit(req){
 		var training=req.model.training;
 		
 
@@ -21,12 +21,13 @@ define({
 		}
 		
 		function onbackBtnElClick(){
+			console.log('back');
 			tau.changePage('#main');
 		}
 		function bindEvents() {
 			var dumbbellBtnEl = document.getElementById('dumbbell');
-			var babelBtnEl = document.getElementById('babel');
-			var backBtnEl = document.getElementById('backat');
+			//var babelBtnEl = document.getElementById('babel');
+			var backBtnEl = document.getElementById('backtraining');
 			
 			dumbbellBtnEl.addEventListener('click', ondumbbellBtnElClick);
 			//babelBtnEl.addEventListener('click', onbabelBtnElClick);

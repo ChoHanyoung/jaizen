@@ -6,18 +6,22 @@ define({
 	          ],
 	def:function traininginit( req) {
 		
-		var setCount,
+		var setcount,
 			count,
 			title,
 			setTime=1,
-			countSet=1;
+			countSet=1,
+			minutes=0,
+			seconds=0,
+			startTime,
+			state = false;
 			
 		function setTitle(Title){
 			title=Title;
 		}
 		
 		function setSetCount(set){
-			setCount=set;
+			setcount=set;
 		}
 		function setCount(Count){
 			count=Count;
@@ -26,17 +30,32 @@ define({
 		function getSetTime(){ return setTime;}
 		function getCountSet(){return countSet;}
 		function getTitle(){return title;}
-		function getSetCount(){return setCount;}
+		function getSetCount(){return setcount;}
 		function getCount(){return count;}
-		
-		function initial(){
-			setTime=1;
-			countSet=1;
-			stop();
+		function getMinutes(){
+			if(minutes>=10){
+				return minutes;
+			} else{
+				return '0'+minutes;
+			}
 		}
+		function getSeconds(){
+			if((seconds%60)>=10){
+				return (seconds%60);
+			} else{
+				return '0'+(seconds%60);
+			}
+		}
+		
 		function stop(){
 			webapis.motion.stop("WRIST_UP");
 			tau.changePage('#main');
+		}
+		function initial(){
+			setTime=1;
+			countSet=1;
+			state=false;
+			stop();
 		}
 		function onstartBtnElClick(){
 			navigator.vibrate(100);
@@ -44,14 +63,14 @@ define({
 			if(countSet>=count){
 				setTime=setTime+1;
 				countSet=1;
-				if(setTime>setCount){
+				if(setTime>setcount){
 		            initial();
 				}
 			}
+			
 		}
 		
 		function onbackBtnElClick(){
-			
 			tau.back();
 		}
 		
@@ -62,36 +81,24 @@ define({
 			backBtnEl.addEventListener('click', onbackBtnElClick);
         }
 		
-		function successCallback(){
-			countSet=countSet+1;
-			navigator.vibrate(100);
-			if(countSet>=count){
-				setTime=setTime+1;
-				countSet=1;
-				if(setTime>setCount){
-		            initial();
-				}
-			}
-			
-		}
-		function errorCallback(){
-			
-		}
-		
-		function successHRMCallback(){
-			
-		}
-	        
 	    function ziro(event){
+	    	if(state==true){
+	    		//console.log("z : "+event.acceleration.z);
+	    		
+	    		seconds=parseInt(((Date.now()-startTime)/1000),10);
+	    		minutes=parseInt(seconds/60);
+	    	}
 	    	//console.log("x : "+event.acceleration.x);
 	    	//console.log("y : "+event.acceleration.y);
-	    	//console.log("z : "+event.acceleration.z);
+	    	
 	    }
+	    
 	    function start(){
-
+	    	console.log('start');
         	window.addEventListener("devicemotion", ziro,true);
             webapis.motion.start("WRIST_UP", onstartBtnElClick);
-        	
+            startTime=Date.now();
+        	state=true;
 	    }
         function init() {
             page=document.getElementById('trainingStart');
@@ -102,7 +109,6 @@ define({
         
         return {
         	init: init,
-        	print: print,
         	setCount: setCount,
         	setSetCount: setSetCount,
         	setTitle: setTitle,
@@ -111,6 +117,8 @@ define({
         	getTitle: getTitle,
         	getSetCount: getSetCount,
         	getCount: getCount,
+        	getMinutes: getMinutes,
+        	getSeconds: getSeconds,
         	start:start
         };
 	}

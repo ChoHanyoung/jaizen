@@ -23,14 +23,20 @@ define({
 			elHead.innerHTML = training.getTitle();
 			maxSet.innerHTML = training.getSetCount();
 			maxCount.innerHTML = training.getCount();
-			
+			elMinutes.innerHTML = training.getMinutes();
+			elSeconds.innerHTML = training.getSeconds();
 		}
 		
 		function hrminfo(hrmInfo){
 			if(hrmInfo.heartRate > 0){
-				HRM.innerHTML= hrmInfo.heartRate;
+				if(hrmInfo.heartRage<10){
+					HRM.innerHTML= '0'+hrmInfo.heartRate;
+				}else{
+					HRM.innerHTML= hrmInfo.heartRate;
+				}
+				
 			}else{
-				HRM.innerHTML= 0;
+				HRM.innerHTML= 00;
 			}
 		}
 		

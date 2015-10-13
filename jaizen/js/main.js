@@ -1,15 +1,17 @@
 define({
 	name : 'main',
 	requires:[
+	          'model/setting',
 	          'core/event',
 	          'core/template',
 	          'core/systeminfo',
 	          'core/application',
-	          'category',
+	          'view/category',
 	          'view/ageSetting',
 	          'view/heightSetting',
 	          'view/weightSetting',
-	          'view/genderSetting'
+	          'view/genderSetting',
+	          'view/setting'
 	          ],
 	def: function maininit(req){
 		
@@ -20,14 +22,15 @@ define({
 		}
 		
 		function onsettingbtnClick(){
+			req.view.setting.print();
 			tau.changePage('#setting');
 		}
 		
 		function ontrainingbtnClick(){
-			tau.changePage('#category');
+			tau.changePage('#training');
 		}
 		function onanlisisClick(){
-			console.log('analisis');
+			tau.changePage('#analisis');
 		}
 		
 		function onexitClick(){

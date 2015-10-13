@@ -7,7 +7,7 @@ define({
 	          ],
 	def: function settinginit(req){
 		
-		var setting = req.setting;
+		var setting = req.view.setting;
 		var modelsetting=req.model.setting;
 		
 		function onokBtnElClick(){
@@ -59,7 +59,6 @@ define({
 		}
 		
 		function init() {
-			
 		    page = document.getElementById('ageSetting');
 		    bindEvents();		   
 		    return;
